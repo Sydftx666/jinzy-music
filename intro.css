@@ -1,0 +1,183 @@
+@font-face {
+  font-family: goodtimes;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2Fgood%20times%20rg.ttf?v=1602559377972");
+}
+
+@font-face {
+  font-family: a;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2FAilerons-Regular.otf?v=1602565148752");
+}
+@font-face {
+  font-family: n;
+  src: url("https://cdn.glitch.com/7eaf3d61-f351-41a2-a8cc-39f2b25abd93%2FTypodermic%20-%20NasalizationRg-Regular.otf?v=1607346998402");
+}
+
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  /*   margin: 2em; */
+  /*   background-color: #130F65; */
+  background-color: #000000;
+  /* margin: 30px; */
+  max-height: 100%;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+
+h1 {
+  font-family: goodtimes;
+  font-style: italic;
+  font-size: 60px;
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+    opacity: 0;
+  animation: emerge 2s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+h2 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 44px;
+  
+}
+
+h3 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 0px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+p {
+  font-family: n;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+/*   user-select: none;
+  white-space: nowrap; */
+  filter: blur(0.007em);
+  font-size: 1.5vw;
+  text-align: justify;
+  font-weight: lighter;
+  display: block;
+  /* margin-top: 2em;
+  margin-bottom: 2em; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+
+.jinzy {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  opacity: 0;
+  animation: emerge 2s ease;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+  @keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro {
+  margin: 50px auto 100px auto;
+  opacity: 0;
+  animation: emerge 2s ease;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  
+}
+
+a:hover {
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+  font-size: 1.6vw;
+}
+
+a {
+  color: #F5F5F5;
+ 
+}
+a: visited {
+  color: #3A0575;
+}
+
+/* mobile device: phone  */
+@media only screen and (max-width: 600px) {
+  
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .jinzy{
+    width: 80vw;
+  }
+  p{
+    font-size: 5vw;
+    width: 90%;
+  }
+  h2 {
+    font-size: 20px;
+    text-shadow: 0 0 0.1rem #1da9cc;
+    filter: blur(0.004em);
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .social {
+    margin: 200px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .presave {
+    font-size: 1rem;
+  }
+
+  a: activated {
+    color: #FD00BD;
+  }
+
+
+}

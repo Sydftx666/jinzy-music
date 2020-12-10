@@ -1,0 +1,351 @@
+/* Install Fonts*/
+@font-face {
+  font-family: goodtimes;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2Fgood%20times%20rg.ttf?v=1602559377972");
+}
+
+@font-face {
+  font-family: a;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2FAilerons-Regular.otf?v=1602565148752");
+}
+
+@font-face {
+  font-family: n;
+  src: url("https://cdn.glitch.com/7eaf3d61-f351-41a2-a8cc-39f2b25abd93%2FTypodermic%20-%20NasalizationRg-Regular.otf?v=1607346998402");
+}
+
+
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  /*   margin: 2em; */
+  /*   background-color: #130F65; */
+  background-color: #000000;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+h1 {
+  font-family: goodtimes;
+  font-style: italic;
+  font-size: 72px;
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+}
+
+h2 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 44px;
+}
+
+h3 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 44px;
+}
+
+h4 {
+  font-family: goodtimes;
+  font-style: italic;
+  font-size: 72px;
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+}
+
+
+p {
+  padding: 0;
+  margin: 0;
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+/* Animation */
+p {
+  animation: animated-text 7s steps(51) 1s 1 normal both,
+    animated-cursor 600ms steps(51) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1100px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.type {
+  margin: 400px 40px 400px 40px;
+}
+
+.button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: emerge 4s ease;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+.button2{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: emerge 4s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.presave{
+  display: block;
+  margin: 0px auto 100px auto;
+  padding: 1rem 1.25rem;
+  font-family: goodtimes;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*   text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #00D0FF,
+    inset 1px 1px 1px white; */
+  color: #08DEEA;
+  text-shadow: 0 0 0.18em #08DEEA;
+
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+    2px 4px 3px rgba(3, 0, 128, 0.3), 0 0 7px 2px rgba(0, 208, 255, 0.6),
+    inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+    inset 2px 4px 3px rgba(3, 0, 128, 0.3),
+    inset 0 0 7px 2px rgba(0, 208, 255, 0.6);
+  animation: flickering 1s ease 4s infinite alternate;
+}
+
+.beattype{
+  display: block;
+  margin: 0px auto 100px auto;
+  padding: 1rem 1.25rem;
+  font-family: goodtimes;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*   text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #00D0FF,
+    inset 1px 1px 1px white; */
+  color: #08DEEA;
+  text-shadow: 0 0 0.18em #08DEEA;
+
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 4px rgba(0, 0, 0, 0.3),
+    2px 4px 3px rgba(3, 0, 128, 0.3), 0 0 7px 2px rgba(0, 208, 255, 0.6),
+    inset 0 1px 2px rgba(0, 0, 0, 0.6), inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+    inset 2px 4px 3px rgba(3, 0, 128, 0.3),
+    inset 0 0 7px 2px rgba(0, 208, 255, 0.6);
+  animation: flickering 1s ease 2s infinite alternate;
+}
+a:hover {
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+}
+
+a {
+  color: #3A0575;
+  font-size: 36px;
+}
+a: visited {
+  color: #3A0575;
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile{
+  width:40%;
+  opacity: 0.6;
+  /* position: -webkit-sticky; 
+  position: sticky;
+  bottom: 0; */  
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.p3{
+  width: 50vw;
+  opacity: 0.2;
+  /* position: -webkit-sticky; 
+  position: sticky;
+  bottom: 0; */  
+  position: fixed;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+}
+
+.follow{
+  padding: 100px;
+}
+.album{
+  opacity: 0.6;
+  animation: flicker 1s ease infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.beat{
+  padding-top: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back{
+  margin-top: 300px;
+  position: relative;
+  bottom 0px;
+}
+
+/* mobile device: phone  */
+@media only screen and (max-width: 600px) {
+  
+
+  h1 {
+    font-size: 68px;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-shadow: 0 0 0.1rem #1da9cc;
+    filter: blur(0.004em);
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+
+
+  .social {
+    margin: 200px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .presave {
+    font-size: 1rem;
+  }
+
+  .beattype{
+    font-size: 6vw;
+    padding: 0.5rem 0.75rem;
+    margin: 0px auto 50px auto;
+  }
+  .back{
+    margin-top: 100px;
+  }
+
+  .p3{
+    margin-top: 25%;
+      width: 80vw;
+  }
+  a: activated {
+    color: #FD00BD;
+  }
+h4{
+  font-size: 5vw;
+}
+.album{
+  opacity: 1;
+  animation-name: none;
+}
+
+.ileft{
+  width:70%;
+}
+
+.profile{
+  width: 70vw;
+}
+
+}
+
