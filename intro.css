@@ -176,6 +176,7 @@ a: visited {
   }
 
   a: activated {
+    font-size: 6vw;
     color: #FD00BD;
   }
 
